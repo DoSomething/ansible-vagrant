@@ -10,5 +10,7 @@ rm /tmp/vagrant.tar
 echo "Ensuring {{ app_root }}/files"
 mkdir {{ app_root }}/files
 
+echo "10.0.2.2  northstar.dev" >> /etc/hosts
+
 echo "Done."
 echo
