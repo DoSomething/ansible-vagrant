@@ -14,6 +14,7 @@ galaxy_info:
 dependencies:
   - { role: "dosomething.base" }
   - { role: "dosomething.db" }
+  - { role: "dosomething.redis" }
   - { role: "dosomething.search" }
   - { role: "dosomething.web" }
   - { role: "dosomething.dosomething" }
