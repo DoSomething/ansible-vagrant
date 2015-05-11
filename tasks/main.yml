@@ -13,3 +13,11 @@
     src=etc/motd.j2
     dest=/etc/update-motd.d/60-dosomething
     mode="u=rwx,g=rx,o=rx"
+
+- name: Add custom vagrant hosts
+  sudo: yes
+  lineinfile: >
+    dest=/etc/hosts
+    line="{{ item }}"
+  with_items:
+    - "10.0.2.2 northstar.dev"
